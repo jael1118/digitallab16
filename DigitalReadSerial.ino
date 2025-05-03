@@ -17,9 +17,6 @@ int buttonState = 0;
 int num = 0;
 
 void setup() {
-  for(byte pin;pin<7;pin++){
-    pinMode( pin,OUTPUT);
-  }
 pinMode(2, OUTPUT);
 pinMode(3, OUTPUT);
 pinMode(4, OUTPUT);
@@ -27,7 +24,7 @@ pinMode(5, OUTPUT);
 pinMode(6, OUTPUT);
 pinMode(7, OUTPUT);
 pinMode(8, OUTPUT);
-// pinMode(9, OUTPUT);
+pinMode(9, OUTPUT);
 pinMode(buttonPin,INPUT_PULLUP);
 Serial.begin(9600);
 }
